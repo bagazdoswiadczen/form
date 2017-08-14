@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box; }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .one {
+    display: none; }
+  .two {
+    width: 100%; }
+  .button-submit {
+    left: 200px;
+    top: 200px; } }
+
+body {
+  background-color: black;
+  background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/1.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-position: -65px -2px; }
+  body h1 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 60px;
+    font-family: 'Open Sans', sans-serif; }
+  body h2,
+  body name,
+  body label,
+  body option,
+  body .button-submit {
+    font-family: 'Open Sans', sans-serif; }
+  body .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: felx-end; }
+    body .wrapper .one {
+      width: 300px;
+      height: 550px;
+      background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true");
+      overflow: hidden;
+      background-position: center center; }
+    body .wrapper .an1 {
+      padding: 1px;
+      background: #42f4d1;
+      width: 90px;
+      margin-top: 50px;
+      margin-left: 15px; }
+    body .wrapper .an2 {
+      padding: 1px;
+      background: purple;
+      width: 180px;
+      margin-top: 25px;
+      margin-left: 15px; }
+    body .wrapper .an3 {
+      padding: 1px;
+      background: white;
+      width: 100px;
+      margin-top: 25px;
+      margin-left: 30px; }
+    body .wrapper .an4 {
+      padding: 1px;
+      background: #42f4d1;
+      width: 80px;
+      margin-top: 25px;
+      margin-left: 30px; }
+    body .wrapper .an5 {
+      padding: 1px;
+      background: white;
+      width: 160px;
+      margin-top: 25px;
+      margin-left: 15px; }
+    body .wrapper .an6 {
+      padding: 1px;
+      background: #42f4d1;
+      width: 160px;
+      margin-top: 25px;
+      margin-left: 80px; }
+    body .wrapper .an7 {
+      padding: 1px;
+      background: purple;
+      width: 140px;
+      margin-top: 25px;
+      margin-left: 80px; }
+    body .wrapper .an8 {
+      padding: 1px;
+      background: white;
+      width: 90px;
+      margin-top: 25px;
+      margin-left: 30px; }
+    body .wrapper .an9 {
+      padding: 1px;
+      background: purple;
+      width: 120px;
+      margin-top: 25px;
+      margin-left: 80px; }
+    body .wrapper .an10 {
+      padding: 1px;
+      background: white;
+      width: 240px;
+      margin-top: 25px;
+      margin-left: 20px; }
+    body .wrapper .an11 {
+      padding: 1px;
+      background: #42f4d1;
+      width: 190px;
+      margin-top: 25px;
+      margin-left: 30px; }
+    body .wrapper .an12 {
+      padding: 1px;
+      background: purple;
+      width: 100px;
+      margin-top: 25px;
+      margin-left: 80px; }
+    body .wrapper .an13 {
+      padding: 1px;
+      background: white;
+      width: 120px;
+      margin-top: 25px;
+      margin-left: 80px; }
+    body .wrapper .an14 {
+      padding: 1px;
+      background: #42f4d1;
+      width: 120px;
+      margin-top: 25px;
+      margin-left: 30px; }
+    body .wrapper .an15 {
+      padding: 1px;
+      background: purple;
+      width: 20px;
+      margin-top: 25px;
+      margin-left: 80px; }
+    body .wrapper .an16 {
+      padding: 1px;
+      background: white;
+      width: 60px;
+      margin-top: 25px;
+      margin-left: 80px; }
+    body .wrapper .an17 {
+      padding: 1px;
+      background: #42f4d1;
+      width: 60px;
+      margin-top: 25px;
+      margin-left: 100px; }
+    body .wrapper .an18 {
+      padding: 1px;
+      background: purple;
+      width: 100px;
+      margin-top: 25px;
+      margin-left: 100px; }
+    body .wrapper .two {
+      width: 470px;
+      background-color: white; }
+      body .wrapper .two input {
+        border: none;
+        border-bottom: 2px solid #c1c1d0;
+        padding-top: 25px;
+        outline: none; }
+      body .wrapper .two .description {
+        padding-top: 30px;
+        padding-left: 50px; }
+      body .wrapper .two .double-input {
+        padding: 40px; }
+      body .wrapper .two .form-input-container {
+        padding: 10px; }
+      body .wrapper .two select {
+        border-width: 0px;
+        width: 90px; }
+      body .wrapper .two .sex {
+        padding: 10px;
+        display: inline-block;
+        border: 1px solid;
+        font-size: 30px; }
+      body .wrapper .two .button-submit {
+        position: absolute;
+        left: 886px;
+        top: 675px;
+        content: "";
+        height: 60px;
+        width: 200px;
+        background: #7138ef; }
+      body .wrapper .two .kwadrat {
+        position: absolute;
+        left: 1086px;
+        top: 675px;
+        content: "";
+        height: 60px;
+        width: 60px;
+        background: #7942f0; }
+      body .wrapper .two button {
+        border: none;
+        font-size: 14px;
+        color: white; }
+
+/*# sourceMappingURL=style.css.map */
