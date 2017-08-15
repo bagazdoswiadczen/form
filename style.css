@@ -1,15 +1,6 @@
 * {
   box-sizing: border-box; }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .one {
-    display: none; }
-  .two {
-    width: 100%; }
-  .button-submit {
-    left: 200px;
-    top: 200px; } }
-
 body {
   background-color: black;
   background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/1.jpg?raw=true");
@@ -21,12 +12,17 @@ body {
     color: white;
     padding: 60px;
     font-family: 'Open Sans', sans-serif; }
-  body h2,
+  body h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: black; }
   body name,
   body label,
   body option,
   body .button-submit {
-    font-family: 'Open Sans', sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #c1c1d0; }
   body .wrapper {
     display: flex;
     flex-direction: row;
@@ -37,7 +33,8 @@ body {
       height: 550px;
       background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true");
       overflow: hidden;
-      background-position: center center; }
+      background-position: center center;
+      background-opacity: 0.2; }
     body .wrapper .an1 {
       padding: 1px;
       background: #42f4d1;
@@ -153,7 +150,15 @@ body {
         border: none;
         border-bottom: 2px solid #c1c1d0;
         padding-top: 25px;
-        outline: none; }
+        outline-color: #42f4d1; }
+        body .wrapper .two input .checkbox {
+          background-color: yellow; }
+      body .wrapper .two .value1 {
+        padding-right: 200px;
+        font-size: 15px; }
+      body .wrapper .two .value2 {
+        padding-right: 108px;
+        font-size: 15px; }
       body .wrapper .two .description {
         padding-top: 30px;
         padding-left: 50px; }
@@ -162,12 +167,15 @@ body {
       body .wrapper .two .form-input-container {
         padding: 10px; }
       body .wrapper .two select {
-        border-width: 0px;
-        width: 90px; }
+        border: 0px;
+        outline: 0px;
+        border-color: white;
+        width: 90px;
+        background-color: white;
+        font-size: 14px; }
       body .wrapper .two .sex {
-        padding: 10px;
+        padding: 15px;
         display: inline-block;
-        border: 1px solid;
         font-size: 30px; }
       body .wrapper .two .button-submit {
         position: absolute;
@@ -177,6 +185,12 @@ body {
         height: 60px;
         width: 200px;
         background: #7138ef; }
+        @media screen and (max-width: 400px) {
+          body .wrapper .two .button-submit {
+            left: 60px;
+            top: 680px; } }
+        body .wrapper .two .button-submit:hover {
+          background: #5e1ded; }
       body .wrapper .two .kwadrat {
         position: absolute;
         left: 1086px;
@@ -185,9 +199,31 @@ body {
         height: 60px;
         width: 60px;
         background: #7942f0; }
+        @media screen and (max-width: 400px) {
+          body .wrapper .two .kwadrat {
+            left: 260px;
+            top: 680px; } }
+        body .wrapper .two .kwadrat:hover {
+          background: #5e1ded; }
       body .wrapper .two button {
         border: none;
         font-size: 14px;
         color: white; }
+      body .wrapper .two .input-group {
+        padding-top: 15px; }
+      body .wrapper .two .col-first {
+        display: inline-block; }
+        body .wrapper .two .col-first input {
+          width: 40px;
+          border: 2px solid #e5e5e5;
+          font-size: 15px; }
+          body .wrapper .two .col-first input select:hover {
+            border: 2px solid blue; }
+      body .wrapper .two .col-second {
+        display: inline-block; }
+        body .wrapper .two .col-second input {
+          width: 150px;
+          border: 2px solid #e5e5e5;
+          font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

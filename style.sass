@@ -1,14 +1,6 @@
 *
 	box-sizing: border-box
 
-@media only screen and (min-width:321px) and (max-width:480px)
-	.one
-		display: none
-	.two	
-		width: 100%
-	.button-submit
-		left: 200px
-		top: 200px
 
 body
 	background-color: black
@@ -21,31 +13,35 @@ body
 		color: white
 		padding: 60px
 		font-family: 'Open Sans', sans-serif
-	h2, 
+	h2
+		font-family: 'Open Sans', sans-serif
+		font-size: 15px
+		color: black
 	name,
 	label,
 	option,
 	.button-submit
 		font-family: 'Open Sans', sans-serif
-
+		font-size: 10px
+		color: #c1c1d0
 	.wrapper
 		display: flex
 		flex-direction: row
 		justify-content: center
 		align-items: felx-end
 		.one
-				width: 300px			
-				height: 550px
-				background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true")
-				overflow: hidden
-				background-position: center center
-
+			width: 300px			
+			height: 550px
+			background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true")
+			overflow: hidden
+			background-position: center center
+			background-opacity: 0.2
 		.an1
 			padding: 1px 
 			background: #42f4d1
 			width: 90px
 			margin-top: 50px
-			margin-left: 15px
+			margin-left: 15px			
 		.an2
 			padding: 1px 
 			background: purple
@@ -155,44 +151,86 @@ body
 				border: none
 				border-bottom: 2px solid #c1c1d0
 				padding-top: 25px
-				outline: none				
+				outline-color: #42f4d1
+				.checkbox
+					background-color: yellow
+			.value1
+				padding-right: 200px
+				font-size: 15px
+			.value2
+				padding-right: 108px	
+				font-size: 15px	
 			.description
 				padding-top: 30px
 				padding-left: 50px
-			
 			.double-input
 				padding: 40px
 			.form-input-container
 				padding: 10px
 			select
-				border-width: 0px
+				border: 0px
+				outline: 0px
+				border-color: white
 				width: 90px
+				background-color: white
+				font-size: 14px
 			.sex
-				padding: 10px
+				padding: 15px
 				display: inline-block	
-				border: 1px solid
 				font-size: 30px
-
 			.button-submit
 				position: absolute
 				left: 886px
 				top: 675px
+				@media screen and (max-width: 400px)
+					left: 60px
+					top: 680px
 				content: ""
 				height: 60px
 				width: 200px
 				background: #7138ef
+				&:hover
+					background: #5e1ded
 			.kwadrat
 				position: absolute
 				left: 1086px
 				top: 675px
+				@media screen and (max-width: 400px)
+					left: 260px
+					top: 680px
 				content: ""
 				height: 60px
 				width: 60px
 				background: #7942f0
+				&:hover
+					background: #5e1ded
 			button
 				border: none
 				font-size: 14px
 				color: white
+			.input-group
+				padding-top: 15px
+			.col-first
+				display: inline-block
+				input		
+					width: 40px
+					border: 2px solid #e5e5e5
+					font-size: 15px
+					select
+						&:hover
+							border: 2px solid blue
+			.col-second
+				display: inline-block
+				input
+					width: 150px
+					border: 2px solid #e5e5e5
+					font-size: 15px
+
+
+
+		
+				
+
 
 
 
