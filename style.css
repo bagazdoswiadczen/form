@@ -214,15 +214,17 @@ body {
       body .wrapper .two .col-first {
         display: inline-block; }
         body .wrapper .two .col-first input {
-          width: 40px;
+          width: 50px;
           border: 2px solid #e5e5e5;
           font-size: 15px; }
           body .wrapper .two .col-first input select:hover {
             border: 2px solid blue; }
+        body .wrapper .two .col-first .dash {
+          font-size: 10px; }
       body .wrapper .two .col-second {
         display: inline-block; }
         body .wrapper .two .col-second input {
-          width: 150px;
+          width: 137px;
           border: 2px solid #e5e5e5;
           font-size: 15px; }
 
