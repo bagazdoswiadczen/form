@@ -1,6 +1,17 @@
 * {
   box-sizing: border-box; }
 
+.def1, body .wrapper .two .col-first span, body .wrapper .two .col-second span {
+  position: relative;
+  bottom: 14px;
+  font-size: 15px;
+  color: #c1c1d0;
+  font-weight: bold; }
+
+.def2:focus, body .wrapper .two .col-first input:focus, body .wrapper .two .col-second input:focus, .def2:active, body .wrapper .two .col-first input:active, body .wrapper .two .col-second input:active {
+  outline: none;
+  border: 2px solid purple; }
+
 body {
   background-color: black;
   background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/1.jpg?raw=true");
@@ -16,25 +27,33 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: black; }
-  body name,
+  body .name,
   body label,
-  body option,
-  body .button-submit {
+  body option {
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     color: #c1c1d0; }
   body .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: felx-end; }
+    justify-content: center; }
     body .wrapper .one {
       width: 300px;
       height: 550px;
-      background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true");
-      overflow: hidden;
-      background-position: center center;
-      background-opacity: 0.2; }
+      position: relative; }
+      body .wrapper .one::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        content: "";
+        width: 300px;
+        height: 550px;
+        background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true");
+        overflow: hidden;
+        background-position: center center;
+        z-index: -1;
+        filter: brightness(0.3); }
     body .wrapper .an1 {
       padding: 1px;
       background: #42f4d1;
@@ -149,10 +168,11 @@ body {
       body .wrapper .two input {
         border: none;
         border-bottom: 2px solid #c1c1d0;
-        padding-top: 25px;
-        outline-color: #42f4d1; }
-        body .wrapper .two input .checkbox {
-          background-color: yellow; }
+        padding-top: 25px; }
+        body .wrapper .two input:focus, body .wrapper .two input:active {
+          outline: none;
+          border: none;
+          border-bottom: 2px solid purple; }
       body .wrapper .two .value1 {
         padding-right: 200px;
         font-size: 15px; }
@@ -177,34 +197,6 @@ body {
         padding: 15px;
         display: inline-block;
         font-size: 30px; }
-      body .wrapper .two .button-submit {
-        position: absolute;
-        left: 886px;
-        top: 675px;
-        content: "";
-        height: 60px;
-        width: 200px;
-        background: #7138ef; }
-        @media screen and (max-width: 400px) {
-          body .wrapper .two .button-submit {
-            left: 60px;
-            top: 680px; } }
-        body .wrapper .two .button-submit:hover {
-          background: #5e1ded; }
-      body .wrapper .two .kwadrat {
-        position: absolute;
-        left: 1086px;
-        top: 675px;
-        content: "";
-        height: 60px;
-        width: 60px;
-        background: #7942f0; }
-        @media screen and (max-width: 400px) {
-          body .wrapper .two .kwadrat {
-            left: 260px;
-            top: 680px; } }
-        body .wrapper .two .kwadrat:hover {
-          background: #5e1ded; }
       body .wrapper .two button {
         border: none;
         font-size: 14px;
@@ -217,15 +209,31 @@ body {
           width: 50px;
           border: 2px solid #e5e5e5;
           font-size: 15px; }
-          body .wrapper .two .col-first input select:hover {
-            border: 2px solid blue; }
-        body .wrapper .two .col-first .dash {
-          font-size: 10px; }
       body .wrapper .two .col-second {
         display: inline-block; }
         body .wrapper .two .col-second input {
           width: 137px;
           border: 2px solid #e5e5e5;
           font-size: 15px; }
+    body .wrapper .three {
+      position: absolute;
+      display: flex;
+      top: 680px;
+      left: 956px; }
+      body .wrapper .three .submit {
+        border: none;
+        width: 150px;
+        height: 60px;
+        content: "";
+        background: #7138ef; }
+        body .wrapper .three .submit:hover {
+          background: #5e1ded; }
+      body .wrapper .three .kwadrat {
+        border: none;
+        width: 60px;
+        content: "";
+        background: #7942f0; }
+        body .wrapper .three .kwadrat:hover {
+          background: #5e1ded; }
 
 /*# sourceMappingURL=style.css.map */

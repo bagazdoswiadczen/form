@@ -1,7 +1,17 @@
 *
 	box-sizing: border-box
 
-
+.def1
+	position: relative
+	bottom: 14px
+	font-size: 15px
+	color: #c1c1d0
+	font-weight: bold
+.def2
+	&:focus,
+	&:active
+		outline: none;
+		border: 2px solid purple
 body
 	background-color: black
 	background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/1.jpg?raw=true")
@@ -17,10 +27,9 @@ body
 		font-family: 'Open Sans', sans-serif
 		font-size: 15px
 		color: black
-	name,
+	.name,
 	label,
-	option,
-	.button-submit
+	option
 		font-family: 'Open Sans', sans-serif
 		font-size: 10px
 		color: #c1c1d0
@@ -28,14 +37,23 @@ body
 		display: flex
 		flex-direction: row
 		justify-content: center
-		align-items: felx-end
 		.one
 			width: 300px			
 			height: 550px
-			background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true")
-			overflow: hidden
-			background-position: center center
-			background-opacity: 0.2
+			position: relative
+			&::after
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				content: ""
+				width: 300px			
+				height: 550px
+				background-image: url("https://github.com/bagazdoswiadczen/bootstrapweb/blob/master/photos/2.jpg?raw=true")
+				overflow: hidden
+				background-position: center center
+				z-index: -1
+				filter: brightness(0.3)
 		.an1
 			padding: 1px 
 			background: #42f4d1
@@ -151,9 +169,11 @@ body
 				border: none
 				border-bottom: 2px solid #c1c1d0
 				padding-top: 25px
-				outline-color: #42f4d1
-				.checkbox
-					background-color: yellow
+				&:focus,
+				&:active
+					outline: none;
+					border: none;
+					border-bottom: 2px solid purple
 			.value1
 				padding-right: 200px
 				font-size: 15px
@@ -178,32 +198,6 @@ body
 				padding: 15px
 				display: inline-block	
 				font-size: 30px
-			.button-submit
-				position: absolute
-				left: 886px
-				top: 675px
-				@media screen and (max-width: 400px)
-					left: 60px
-					top: 680px
-				content: ""
-				height: 60px
-				width: 200px
-				background: #7138ef
-				&:hover
-					background: #5e1ded
-			.kwadrat
-				position: absolute
-				left: 1086px
-				top: 675px
-				@media screen and (max-width: 400px)
-					left: 260px
-					top: 680px
-				content: ""
-				height: 60px
-				width: 60px
-				background: #7942f0
-				&:hover
-					background: #5e1ded
 			button
 				border: none
 				font-size: 14px
@@ -216,19 +210,39 @@ body
 					width: 50px
 					border: 2px solid #e5e5e5
 					font-size: 15px
-					select
-						&:hover
-							border: 2px solid blue
-				.dash
-					font-size: 10px
+					@extend .def2
+				span
+					@extend .def1
 			.col-second
+				span
+					@extend .def1
 				display: inline-block
 				input
 					width: 137px
 					border: 2px solid #e5e5e5
 					font-size: 15px
-
-
+					@extend .def2
+		.three
+			position: absolute
+			display: flex
+			top: 680px
+			left: 956px
+			.submit
+				border: none
+				width: 150px
+				height: 60px
+				content: ""
+				background: #7138ef
+				&:hover
+					background: #5e1ded
+			.kwadrat
+				border: none
+				width: 60px
+				content: ""
+				background: #7942f0
+				&:hover
+					background: #5e1ded
+		
 
 		
 				
