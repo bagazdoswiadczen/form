@@ -1,6 +1,8 @@
 *
 	box-sizing: border-box
-
+body
+	@media (max-width: 390px)
+		display: none
 .def1
 	position: relative
 	bottom: 14px
@@ -41,6 +43,7 @@ body
 			width: 300px			
 			height: 550px
 			position: relative
+			
 			&::after
 				position: absolute
 				top: 0
@@ -222,26 +225,24 @@ body
 					border: 2px solid #e5e5e5
 					font-size: 15px
 					@extend .def2
-		.three
-			position: absolute
-			display: flex
-			top: 680px
-			left: 956px
-			.submit
-				border: none
-				width: 150px
-				height: 60px
-				content: ""
-				background: #7138ef
-				&:hover
-					background: #5e1ded
-			.kwadrat
-				border: none
-				width: 60px
-				content: ""
-				background: #7942f0
-				&:hover
-					background: #5e1ded
+			.three
+				position: absolute
+				top: 63%%
+				.submit
+					border: none
+					width: 150px
+					height: 60px
+					content: ""
+					background: #7138ef
+					&:hover
+						background: #5e1ded
+				.kwadrat
+					border: none
+					width: 60px
+					content: ""
+					background: #7942f0
+					&:hover
+						background: #5e1ded
 		
 
 		

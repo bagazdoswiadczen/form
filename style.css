@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+@media (max-width: 390px) {
+  body {
+    display: none; } }
+
 .def1, body .wrapper .two .col-first span, body .wrapper .two .col-second span {
   position: relative;
   bottom: 14px;
@@ -215,25 +219,24 @@ body {
           width: 137px;
           border: 2px solid #e5e5e5;
           font-size: 15px; }
-    body .wrapper .three {
-      position: absolute;
-      display: flex;
-      top: 680px;
-      left: 956px; }
-      body .wrapper .three .submit {
-        border: none;
-        width: 150px;
-        height: 60px;
-        content: "";
-        background: #7138ef; }
-        body .wrapper .three .submit:hover {
-          background: #5e1ded; }
-      body .wrapper .three .kwadrat {
-        border: none;
-        width: 60px;
-        content: "";
-        background: #7942f0; }
-        body .wrapper .three .kwadrat:hover {
-          background: #5e1ded; }
+      body .wrapper .two .three {
+        position: absolute;
+        width: 40%;
+        top: 63%; }
+        body .wrapper .two .three .submit {
+          border: none;
+          width: 150px;
+          height: 60px;
+          content: "";
+          background: #7138ef; }
+          body .wrapper .two .three .submit:hover {
+            background: #5e1ded; }
+        body .wrapper .two .three .kwadrat {
+          border: none;
+          width: 60px;
+          content: "";
+          background: #7942f0; }
+          body .wrapper .two .three .kwadrat:hover {
+            background: #5e1ded; }
 
 /*# sourceMappingURL=style.css.map */
